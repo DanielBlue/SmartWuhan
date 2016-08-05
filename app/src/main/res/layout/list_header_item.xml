@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:id="@+id/fl_topnews"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_news_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <RelativeLayout
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#a000">
+            <TextView
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:id="@+id/tv_image_title"
+                android:text="tv_image_title"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/image_indicator"
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

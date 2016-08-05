@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <com.example.zhwh.View.NoScrollViewPager
+        android:id="@+id/vp_content_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/bottom_tab_bg">
+        <RadioButton
+            android:id="@+id/btn_home"
+            android:text="Home"
+            android:drawableTop="@drawable/home_icon_press"
+            android:checked="true"
+            style="@style/BottomIcon"/>
+        <RadioButton
+            android:id="@+id/btn_news"
+            android:text="News"
+            android:drawableTop="@drawable/news_icon_press"
+            style="@style/BottomIcon"/>
+        <RadioButton
+            android:id="@+id/btn_service"
+            android:text="Service"
+            android:drawableTop="@drawable/smart_icon_press"
+            style="@style/BottomIcon"/>
+        <RadioButton
+            android:id="@+id/btn_gov"
+            android:text="GovAffairs"
+            android:drawableTop="@drawable/gov_icon_press"
+            style="@style/BottomIcon"/>
+        <RadioButton
+            android:id="@+id/btn_setting"
+            android:text="Setting"
+            android:drawableTop="@drawable/setting_icon_press"
+            style="@style/BottomIcon"/>
+    </RadioGroup>
+
+</LinearLayout>
